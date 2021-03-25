@@ -1,0 +1,2 @@
+gcloud app deploy app.yaml --project simple-ecommerce-site-308706
+
