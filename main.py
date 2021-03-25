@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template, url_for
 from flask_cors import (CORS, cross_origin)
 from uuid import uuid4
 from os import environ
-
+from routes import *
 
 
 app = Flask(__name__)
@@ -16,11 +16,9 @@ else:
     environ["FLASK_SECRET_KEY"] = str(uuid4())
 CORS(app, resources={r"*": {"origins": "*"}})
 
+app.register_blueprint(landing)
+app.register_blueprint(storefront)
 
-
-@app.route('/', methods=['GET'], strict_slashes=False)
-def index():
-    return 'hello world'
 
 
 """
