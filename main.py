@@ -6,6 +6,7 @@ from flask_cors import (CORS, cross_origin)
 from uuid import uuid4
 from os import environ
 from routes import *
+from api import *
 
 
 app = Flask(__name__)
@@ -18,6 +19,7 @@ CORS(app, resources={r"*": {"origins": "*"}})
 
 app.register_blueprint(landing)
 app.register_blueprint(storefront)
+app.register_blueprint(api_v1)
 
 
 
