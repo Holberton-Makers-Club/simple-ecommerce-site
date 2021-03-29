@@ -1,0 +1,99 @@
+body, h1, h3 {
+    font-family: 'Rozha One', serif;
+}
+
+.hero {
+    background-image: url(../static/images/city_background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F1D4D4;
+    border: #6A097D solid 1px;
+    width: 195px;
+    height: 44%;
+}
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 24px;
+    list-style: none;
+    height: 100%;
+    margin: auto;    
+}
+
+a {
+    color: #444444;
+}
+
+a:hover {
+    color: #6A097D;
+}
+
+.logo {
+    text-align: center;
+    margin-left: 195px;
+    padding: 110px 0;
+}
+.logo img {
+    border-radius: 50%;
+}
+.slogan {
+    background-color: #C060A1;
+    text-align: center;
+}
+.slogan h2 {
+    font-family: 'Rozha One', serif;
+    font-size: 78px;
+    color: #444444;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about {
+    background-image: url(../static/images/about_background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+.about .quote {
+    font-size: 24px;
+    color: #444444;
+    width: 50%;
+    text-align: justify;
+    padding: 85px 0;
+    margin: 0 auto;
+}
+
+.content-products {
+    display: flex;
+    margin-left: 195px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-products h1 {
+    padding-top: 3rem;
+    font-size: 50px;
+}
+
+.product-list {
+    justify-content: center;
+}
+
+.card-image {
+    margin: 0 auto;
+    overflow: hidden;    
+}
+
+footer {
+    background-color: #F1D4D4;
+    color: #444444;
+    text-align: center;
+    margin-top: 3rem;
+}

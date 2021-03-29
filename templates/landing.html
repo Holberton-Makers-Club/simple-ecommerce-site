@@ -1,1 +1,45 @@
-<a href="{{ url_for('store.index') }}">products</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Simple E-commerce website"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
+    <link rel="stylesheet" href="../static/styles.css"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+
+    <title>Toastbrush</title>
+  </head>
+  
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul class="nav_list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="{{ url_for('store.index') }}">Store</a></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="logo"><img src="../static/images/toast_brush_logo_circle-cropped.png" alt=""></div>
+            </div>
+            <div class="slogan">
+                <h2>You Can't Brush What You Can't Touch</h2>
+            </div>
+            <div class="about" id="about">
+                <div class="quote">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor. Massa sed elementum tempus egestas sed sed risus pretium. Quam viverra orci sagittis eu volutpat odio facilisis. Lorem ipsum dolor sit amet consectetur. Diam donec adipiscing tristique risus nec. Neque convallis a cras semper. Ut placerat orci nulla pellentesque dignissim enim sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>© Makers Club 2021</footer>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,18 +1,73 @@
-store page
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Simple E-commerce website"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
+    <link rel="stylesheet" href="../static/styles.css"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
 
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+    <title>Toastbrush</title>
+  </head>
+  
+    <body>
+        <div class="">
+            <div class="sidebar">
+                <ul class="nav_list">
+                    <li class="nav-item"><a href="{{ url_for('landing.index') }}">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="{{ url_for('store.index') }}">Store</a></li>
+                </ul>
+            </div>
+            <div class="content-products">
+                <h1>Our Fine Products</h1>
+                <div class="product-list ui link cards">
+                {% if data %}
+                    {% if data.products %}
+        
+                    {% for product in data.products %}
+                    <div class="ui card">
+                        <div class="image">
+                            <img src={{ product.image_url }} height="200px">
+                        </div>
+                        <div class="content">
+                            <h3>{{ product.name }}</h3>
+                            <div class="meta">
+                                <span class="date">{{ product.in_stock }} in stock.</span>
+                            </div>
+                            <div class="description">
+                                {{ product.description }}
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                {% endif %}
+                    
+                </div>
+            </div>                
+        </div>
+        
+        
+        
+        <div class="footer">
+            <footer>© Makers Club 2021</footer>
+        </div>
+    </body>
+</html>
 
 
 
-{% if data %}
-    {% if data.products %}
-
-        {{ data.products }}
-
-    {% endif %}
-{% endif %}
